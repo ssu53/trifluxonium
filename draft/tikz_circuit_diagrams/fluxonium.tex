@@ -1,0 +1,101 @@
+\documentclass[border=1cm]{standalone}
+
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{adjustbox}
+\usepackage{verbatim}
+
+\pagenumbering{gobble}
+
+
+
+\makeatletter
+% used to process styles for to-path
+\def\TikzBipolePath#1#2{\pgf@circ@bipole@path{#1}{#2}}
+% restore size value for bipole definitions
+\pgf@circ@Rlen = \pgfkeysvalueof{/tikz/circuitikz/bipoles/length}
+\makeatother
+\newlength{\ResUp}
+\newlength{\ResDown}
+\newlength{\ResLeft}
+\newlength{\ResRight}
+
+%  josephsonjunction
+\ctikzset{bipoles/JJ/height/.initial=.30}   % box height
+\ctikzset{bipoles/JJ/width/.initial=.30}    % box width
+\pgfcircdeclarebipole{}                                    % no extra anchors
+{\ctikzvalof{bipoles/JJ/height}}
+{JJ}                                        % component name
+{\ctikzvalof{bipoles/JJ/height}}
+{\ctikzvalof{bipoles/JJ/width}}
+{                                                          % component symbol drawing...
+  \pgfextracty{\ResUp}{\northeast}                         % coordinates
+  \pgfextracty{\ResDown}{\southwest}
+  \pgfextractx{\ResLeft}{\southwest}
+  \pgfextractx{\ResRight}{\northeast}
+  \pgfsetlinewidth{3\pgfstartlinewidth}
+  \pgfmoveto{\pgfpoint{\ResLeft}{\ResDown}}
+  \pgflineto{\pgfpoint{\ResRight}{\ResUp}}
+  \pgfmoveto{\pgfpoint{\ResRight}{\ResDown}}
+  \pgflineto{\pgfpoint{\ResLeft}{\ResUp}}
+  \pgfusepath{draw}
+  \pgfsetlinewidth{\pgfstartlinewidth}
+  \pgfmoveto{\pgfpoint{\ResLeft}{0}}
+  \pgflineto{\pgfpoint{\ResRight}{0}}
+  \pgfusepath{draw}
+}
+\def\circlepath#1{\TikzBipolePath{JJ}{#1}}
+\tikzset{JJ/.style = {\circuitikzbasekey, /tikz/to path=\circlepath, l=#1}}
+
+
+
+
+
+
+\begin{document}
+
+
+\begin{circuitikz}
+  \draw (1,0)
+  -- (2,0);
+  \draw (2,0)
+  -- (2,1)
+  to[L] (5,1)
+  -- (5,0);
+  \draw (2,0)
+  node[label={$\phi_1$}] {}
+  to[JJ, *-*] (5,0)
+  node[label={$\phi_2$}] {};
+  \draw (2,0)
+  -- (2,-1)
+  to[C] (5,-1)
+  -- (5,0);
+  \draw (5,0)
+  -- (6,0);
+\end{circuitikz}
+
+
+% with parameter labels
+\begin{comment}
+\begin{circuitikz}
+  \draw (0,0)
+  -- (2,0);
+  \draw (2,0)
+  -- (2,1)
+  to[L, l^=$E_L$] (5,1)
+  -- (5,0);
+  \draw (2,0)
+  node[label={$\phi_1$}] {}
+  to[JJ, l_=$E_J$, *-*] (5,0)
+  node[label={$\phi_2$}] {};
+  \draw (2,0)
+  -- (2,-1)
+  to[C, l_=$E_C$] (5,-1)
+  -- (5,0);
+  \draw (5,0)
+  -- (7,0);
+\end{circuitikz}
+\end{comment}
+
+\end{document}

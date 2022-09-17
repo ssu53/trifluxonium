@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Quantum circuits in the Hamiltonian formulism}{2}
+\contentsline {subsection}{\numberline {2.1}Flux and charge}{2}
+\contentsline {subsection}{\numberline {2.2}Josephson junction}{3}
+\contentsline {subsection}{\numberline {2.3}Setting up the circuit Lagrangian}{4}
+\contentsline {subsection}{\numberline {2.4}Quantisation}{4}
+\contentsline {section}{\numberline {3}Superconducting qubits}{5}
+\contentsline {subsection}{\numberline {3.1}Qubit lifetime}{5}
+\contentsline {subsection}{\numberline {3.2}Cooper pair box}{6}
+\contentsline {subsection}{\numberline {3.3}Transmon}{7}
+\contentsline {subsection}{\numberline {3.4}Fluxonium}{8}
+\contentsline {subsection}{\numberline {3.5}Transitions and qubit control}{9}
+\contentsline {subsection}{\numberline {3.6}Design objectives}{10}
+\contentsline {section}{\numberline {4}Trifluxonium}{11}
+\contentsline {subsection}{\numberline {4.1}Circuit Hamiltonian}{11}
+\contentsline {subsection}{\numberline {4.2}Eigensystem}{13}
+\contentsline {subsection}{\numberline {4.3}Capacitative coupling: $\zeta , \theta , \phi $ modes}{15}
+\contentsline {subsection}{\numberline {4.4}Capacitative coupling: numerical results}{17}
+\contentsline {section}{\numberline {5}Conclusions}{18}
+\contentsline {section}{\numberline {6}Appendices}{18}
+\contentsline {subsection}{\numberline {6.1}Finite difference method}{18}
+\contentsline {subsection}{\numberline {6.2}Trifluxonium basis transform}{20}
+\contentsline {section}{References}{21}

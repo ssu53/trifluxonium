@@ -1,0 +1,96 @@
+\begin{thebibliography}{10}
+
+\bibitem{divincenzo2000physical}
+D.~P. DiVincenzo, {\em The physical implementation of quantum computation},
+\newblock Fortschritte der Physik: Progress of Physics {\bf 48}, 771 (2000).
+
+\bibitem{nakamura1999coherent}
+Y.~Nakamura, Y.~A. Pashkin, and J.~Tsai, {\em Coherent control of macroscopic
+  quantum states in a single-Cooper-pair box},
+\newblock nature {\bf 398}, 786 (1999).
+
+\bibitem{dempster2014understanding}
+J.~M. Dempster, B.~Fu, D.~G. Ferguson, D.~Schuster, and J.~Koch, {\em
+  Understanding degenerate ground states of a protected quantum circuit in the
+  presence of disorder},
+\newblock Physical Review B {\bf 90}, 094518 (2014).
+
+\bibitem{vool2017introduction}
+U.~Vool and M.~Devoret, {\em Introduction to quantum electromagnetic circuits},
+\newblock International Journal of Circuit Theory and Applications {\bf 45},
+  897 (2017).
+
+\bibitem{schuster2007circuit}
+D.~I. Schuster,
+\newblock {\em Circuit quantum electrodynamics} (Yale University, 2007).
+
+\bibitem{scarlino2017all}
+P.~Scarlino {\em et~al.}, {\em All-Microwave Control and Dispersive Readout of
+  Gate-Defined Quantum Dot Qubits in Circuit Quantum Electrodynamics},
+\newblock arXiv preprint arXiv:1711.01906  (2017).
+
+\bibitem{girvin2011superconducting}
+S.~M. Girvin, {\em Superconducting qubits and circuits: Artificial atoms
+  coupled to microwave photons},
+\newblock Lectures delivered at Ecole d’Et{\'e} Les Houches  (2011).
+
+\bibitem{koch2007charge}
+J.~Koch {\em et~al.}, {\em Charge-insensitive qubit design derived from the
+  Cooper pair box},
+\newblock Physical Review A {\bf 76}, 042319 (2007).
+
+\bibitem{earnest2018realization}
+N.~Earnest {\em et~al.}, {\em Realization of a $\Lambda$ system with metastable
+  states of a capacitively shunted fluxonium},
+\newblock Physical review letters {\bf 120}, 150504 (2018).
+
+\bibitem{reed2013entanglement}
+M.~Reed,
+\newblock {\em Entanglement and quantum error correction with superconducting
+  qubits} (Lulu. com, 2013).
+
+\bibitem{blais2007quantum}
+A.~Blais {\em et~al.}, {\em Quantum-information processing with circuit quantum
+  electrodynamics},
+\newblock Physical Review A {\bf 75}, 032329 (2007).
+
+\bibitem{paik2011observation}
+H.~Paik {\em et~al.}, {\em Observation of high coherence in Josephson junction
+  qubits measured in a three-dimensional circuit QED architecture},
+\newblock Physical Review Letters {\bf 107}, 240501 (2011).
+
+\bibitem{blais2004cavity}
+A.~Blais, R.-S. Huang, A.~Wallraff, S.~M. Girvin, and R.~J. Schoelkopf, {\em
+  Cavity quantum electrodynamics for superconducting electrical circuits: An
+  architecture for quantum computation},
+\newblock Physical Review A {\bf 69}, 062320 (2004).
+
+\bibitem{pozarmicrowave}
+D.~M. Pozar,
+\newblock {\em Microwave Engineering} (John Wiley \& Sons, 2012).
+
+\bibitem{axline2016architecture}
+C.~Axline {\em et~al.}, {\em An architecture for integrating planar and 3D cQED
+  devices},
+\newblock Applied Physics Letters {\bf 109}, 042601 (2016).
+
+\bibitem{houck2007generating}
+A.~Houck {\em et~al.}, {\em Generating single microwave photons in a circuit},
+\newblock Nature {\bf 449}, 328 (2007).
+
+\bibitem{schreier2008suppressing}
+J.~Schreier {\em et~al.}, {\em Suppressing charge noise decoherence in
+  superconducting charge qubits},
+\newblock Physical Review B {\bf 77}, 180502 (2008).
+
+\bibitem{nielsenchuang}
+M.~A. Nielsen and I.~L. Chuang,
+\newblock {\em Quantum Computation and Quantum Information} (Cambridge
+  University Press, 2010).
+
+\bibitem{manucharyan2009fluxonium}
+V.~E. Manucharyan, J.~Koch, L.~I. Glazman, and M.~H. Devoret, {\em Fluxonium:
+  Single cooper-pair circuit free of charge offsets},
+\newblock Science {\bf 326}, 113 (2009).
+
+\end{thebibliography}

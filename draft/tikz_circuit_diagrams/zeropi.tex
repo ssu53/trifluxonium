@@ -1,0 +1,95 @@
+%\documentclass[border={0pt 20pt 0pt 0pt}]{standalone}
+
+\documentclass[border=1cm]{standalone}
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{adjustbox}
+\usepackage{verbatim}
+
+\pagenumbering{gobble}
+
+
+
+\makeatletter
+% used to process styles for to-path
+\def\TikzBipolePath#1#2{\pgf@circ@bipole@path{#1}{#2}}
+% restore size value for bipole definitions
+\pgf@circ@Rlen = \pgfkeysvalueof{/tikz/circuitikz/bipoles/length}
+\makeatother
+\newlength{\ResUp}
+\newlength{\ResDown}
+\newlength{\ResLeft}
+\newlength{\ResRight}
+
+%  josephsonjunction
+\ctikzset{bipoles/JJ/height/.initial=.30}   % box height
+\ctikzset{bipoles/JJ/width/.initial=.30}    % box width
+\pgfcircdeclarebipole{}                                    % no extra anchors
+{\ctikzvalof{bipoles/JJ/height}}
+{JJ}                                        % component name
+{\ctikzvalof{bipoles/JJ/height}}
+{\ctikzvalof{bipoles/JJ/width}}
+{                                                          % component symbol drawing...
+  \pgfextracty{\ResUp}{\northeast}                         % coordinates
+  \pgfextracty{\ResDown}{\southwest}
+  \pgfextractx{\ResLeft}{\southwest}
+  \pgfextractx{\ResRight}{\northeast}
+  \pgfsetlinewidth{3\pgfstartlinewidth}
+  \pgfmoveto{\pgfpoint{\ResLeft}{\ResDown}}
+  \pgflineto{\pgfpoint{\ResRight}{\ResUp}}
+  \pgfmoveto{\pgfpoint{\ResRight}{\ResDown}}
+  \pgflineto{\pgfpoint{\ResLeft}{\ResUp}}
+  \pgfusepath{draw}
+  \pgfsetlinewidth{\pgfstartlinewidth}
+  \pgfmoveto{\pgfpoint{\ResLeft}{0}}
+  \pgflineto{\pgfpoint{\ResRight}{0}}
+  \pgfusepath{draw}
+}
+\def\circlepath#1{\TikzBipolePath{JJ}{#1}}
+\tikzset{JJ/.style = {\circuitikzbasekey, /tikz/to path=\circlepath, l=#1}}
+
+
+
+
+\begin{document}
+
+\begin{comment}
+\begin{adjustbox}{scale=1}
+  \begin{circuitikz}
+    \draw (0,0) 
+    to[JJ, v^>=$\varphi_5$] (3,5)
+    to[L, v^>=$\varphi_4$] (6,0)
+    to[C, v^>=$\varphi_6$] (0,0);
+    \draw (3,2)
+    to[L, v^>=$\varphi_2$] (0,0);
+    \draw (3,2)
+    to[C, v_>=$\varphi_1$] (3,5);
+    \draw (3,2)
+    to[JJ, v_>=$\varphi_3$] (6,0);
+  \end{circuitikz}
+\end{adjustbox}
+\end{comment}
+
+
+\begin{adjustbox}{scale=1}
+  \begin{circuitikz}
+    \draw (0,0) 
+    node[label={below:$\phi_1$}] {}
+    to[JJ, *-*] (3,5)
+    node[label={above:$\phi_3$}] {}
+    to[L, *-*] (6,0)
+    node[label={below:$\phi_2$}] {}
+    to[C] (0,0);
+    \draw (3,2)
+    node[label={below:$\phi_0$}] {}
+    to[L] (0,0);
+    \draw (3,2)
+    to[C] (3,5);
+    \draw (3,2)
+    to[JJ] (6,0);
+  \end{circuitikz}
+\end{adjustbox}
+
+
+\end{document}

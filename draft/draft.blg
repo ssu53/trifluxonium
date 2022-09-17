@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: draft.aux
+The style file: h-physrev.bst
+Database file #1: draft.bib
+You've used 19 entries,
+            1949 wiz_defined-function locations,
+            725 strings with 8834 characters,
+and the built_in function-call counts, 3992 in all, are:
+= -- 257
+> -- 197
+< -- 0
++ -- 69
+- -- 42
+* -- 357
+:= -- 524
+add.period$ -- 19
+call.type$ -- 19
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 221
+empty$ -- 413
+format.name$ -- 61
+if$ -- 919
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 23
+newline$ -- 79
+num.names$ -- 19
+pop$ -- 90
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 169
+stack$ -- 0
+substring$ -- 202
+swap$ -- 70
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 32
+width$ -- 21
+write$ -- 150
